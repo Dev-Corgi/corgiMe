@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "@/*": ["./src/*"],
+      "@Image/*": ["./public/Assets/Images/Image/*"],
+      "@SVG/*": ["./public/Assets/Images/SVG/*"],
+      "@AnimatedSVG/*": ["./public/Assets/Images/AnimatedSVG/*"],
+      "@Components/*": ["./src/app/Components/*"],
+      "@root/*":["./*"]
+    }
+  }
+}

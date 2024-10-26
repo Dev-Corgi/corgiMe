@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  em {
+    @apply font-accent;
+  }
+
+  b {
+    @apply font-accent;
+  }
+}
+
+html {
+  font-size: calc((100vw / var(--size)) * 16);
+  /* line-height: 1.3; */
+}
+
+:root {
+  --QuickSilver:#A2A2A2;
+  --Gunmetal:#253B39;
+  --CaribbeanGreen:#14CF93;
+  --Onyx:#383838;
+  --Snow:#FCFAF8;
+  --White:#FFFFFF;
+  --Black:#000000;
+
+  --Primary:var(--CaribbeanGreen);
+  --Secondary:var(--Gunmetal);
+
+  --Neutral200:var(--CaribbeanGreen);
+  --Neutral400:var(--QuickSilver);
+  --Neutral600:var(--Onyx);
+  --NeutralWhite:var(--White);
+  --NeutralBlack:var(--Black);
+
+  --size: 320; /* 기본 크기 설정 */
+
+  --text-2xs: 0.625rem;
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+  --text-6xl: 3.75rem;
+  --text-7xl: 4.5rem;
+  --text-8xl: 6rem;
+  --text-9xl: 8rem;
+  --text-10xl: 10rem;
+  --text-11xl: 12rem;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+} */
+
+
+@media (min-width: 768px) {
+  :root {
+    --size: 768;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --size: 1024;
+  }
+}
+
+@media (min-width: 1440px) {
+  :root {
+    --size: 1440;
+  }
+}
+
+body {
+  /* color: var(--foreground); */
+  background: var(--Snow);
+  /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@font-face {
+  font-family: 'Pretendard_Medium';
+  src: url('/Fonts/Pretendard-Medium.ttf') ;
+}
+@font-face {
+  font-family: 'Pretendard_SemiBold';
+  src: url('/Fonts/Pretendard-SemiBold.ttf') ;
+}
