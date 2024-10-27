@@ -2,7 +2,7 @@
 "use client";
 import { useEffect, useRef } from "react";
 import Lenis from "@studio-freight/lenis";
-import LenisContext from "@root/context/lenisContext";
+import LenisContext from "../../../context/LenisContext";
 
 export default function SmoothScrollWrapper({ children }) {
   const lenisRef = useRef(null);

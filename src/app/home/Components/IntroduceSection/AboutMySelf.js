@@ -1,7 +1,7 @@
 import TopWhileVIewWrapper from "@/app/UtilComponents/TopWhileViewWrapper";
 import ContactIcon from "@SVG/IconContact.svg";
 import SubLabels from "@/app/Components/SubLabels";
-import { useLenis } from "@root/context/lenisContext";
+import { useLenis } from "../../../../../context/LenisContext";
 export default function AboutMySelf() {
   const lenis = useLenis();
 
