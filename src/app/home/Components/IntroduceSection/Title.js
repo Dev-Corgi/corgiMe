@@ -12,7 +12,7 @@ export default function Title({ className }) {
   return (
     <div className="flex flex-col flex-wrap w-full mt-24 md:flex-row md:items-center">
       <motion.p
-        className="relative w-full leading-none origin-bottom md:w-min font-primary text-7xl text-primary md:text-8xl"
+        className="relative w-full text-6xl leading-none origin-bottom md:w-min font-primary text-primary md:text-8xl"
         animate={isLoadingAnimationComplete && "begin"}
         initial={{ scaleY: 0 }}
         variants={{
@@ -31,7 +31,7 @@ export default function Title({ className }) {
         <AnimatedLetter className="h-14 md:h-20 lg:h-24 xl:h-32 text-point"></AnimatedLetter>
         </div>
         <motion.p
-          className="relative w-full leading-none origin-bottom md:w-min font-primary text-7xl text-primary md:text-8xl"
+          className="relative w-full text-6xl leading-none origin-bottom md:w-min font-primary text-primary md:text-8xl"
           animate={isLoadingAnimationComplete && "begin"}
           initial={{ scaleY: 0 }}
           variants={{
