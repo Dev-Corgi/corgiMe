@@ -21,7 +21,7 @@ export default function Home() {
   }, []);
 
   return (
-    <Provider store={store}>
+    <Provider store={store} >
       <LoadingScreen isLoaded={isLoaded}></LoadingScreen>
     <HomePage></HomePage>
     </Provider>

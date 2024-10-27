@@ -51,7 +51,7 @@ export default function RootLayout({ children }) {
           <link key={index} rel="preload" href={src} as="image" />
         ))}
       </Head>
-      <body className="relative overflow-x-clip">
+      <body className="relative overflow-x-clip no-scrollbar">
         <SmoothScrollWrapper>
           {/* <Navigation className="fixed z-10 w-full px-4 mt-14 md:px-8 lg:px-12 xl:px-16"></Navigation> */}
           {children}

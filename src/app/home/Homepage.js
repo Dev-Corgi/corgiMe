@@ -6,7 +6,7 @@ import Footer from "./Section/Footer";
 
 export default function HomePage() {
   return (
-    <div className="flex flex-col w-full overflow-x-clip">
+    <div className="flex flex-col w-full">
     <IntroduceSection></IntroduceSection>
     <PortpolioSection></PortpolioSection>
     <HonorsSection></HonorsSection>

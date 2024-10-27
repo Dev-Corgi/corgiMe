@@ -153,7 +153,7 @@ const AnimatedLetter = ({className = null}) => {
             stroke="currentColor"
             strokeMiterlimit="10"
             strokeWidth="34"
-            style="stroke-dashoffset: 0; stroke-dasharray: none;"
+            style="strokeDashoffset: 0; strokeDasharray: none;"
             variants={lineVariants_dot}
             initial="initial"
             animate={isLoadingAnimationComplete && "animate"}></motion.path>
@@ -168,7 +168,7 @@ const AnimatedLetter = ({className = null}) => {
             stroke="currentColor"
             strokeMiterlimit="10"
             strokeWidth="42"
-            style="stroke-dashoffset: 0; stroke-dasharray: none;"
+            style="strokeDashoffset: 0; strokeDasharray: none;"
 			variants={lineVariants_l}
             initial="initial"
             animate={isLoadingAnimationComplete && "animate"}></motion.polyline>
@@ -183,7 +183,7 @@ const AnimatedLetter = ({className = null}) => {
             stroke="currentColor"
             strokeMiterlimit="10"
             strokeWidth="42"
-            style="stroke-dashoffset: 0; stroke-dasharray: none;"
+            style="strokeDashoffset: 0; strokeDasharray: none;"
 			variants={lineVariants_i}
             initial="initial"
             animate={isLoadingAnimationComplete && "animate"}></motion.polyline>
@@ -199,7 +199,7 @@ const AnimatedLetter = ({className = null}) => {
             stroke="currentColor"
             strokeMiterlimit="10"
             strokeWidth="42"
-            style="stroke-dashoffset: 0; stroke-dasharray: none;"
+            style="strokeDashoffset: 0; strokeDasharray: none;"
 			variants={lineVariants_a}
             initial="initial"
             animate={isLoadingAnimationComplete && "animate"}></motion.path>
@@ -215,7 +215,7 @@ const AnimatedLetter = ({className = null}) => {
             stroke="currentColor"
             strokeMiterlimit="10"
             strokeWidth="42"
-            style="stroke-dashoffset: 0; stroke-dasharray: none;"
+            style="strokeDashoffset: 0; strokeDasharray: none;"
 			variants={lineVariants_u}
             initial="initial"
             animate={isLoadingAnimationComplete && "animate"}></motion.path>
@@ -231,7 +231,7 @@ const AnimatedLetter = ({className = null}) => {
             stroke="currentColor"
             strokeMiterlimit="10"
             strokeWidth="42"
-            style="stroke-dashoffset: 0; stroke-dasharray: none;"
+            style="strokeDashoffset: 0; strokeDasharray: none;"
 			variants={lineVariants_s}
             initial="initial"
             animate={isLoadingAnimationComplete && "animate"}></motion.path>
@@ -247,7 +247,7 @@ const AnimatedLetter = ({className = null}) => {
             stroke="currentColor"
             strokeMiterlimit="10"
             strokeWidth="70"
-            style="stroke-dashoffset: 0; stroke-dasharray: none;"
+            style="strokeDashoffset: 0; strokeDasharray: none;"
 			variants={lineVariants_v}
             initial="initial"
             animate={isLoadingAnimationComplete && "animate"}></motion.path>

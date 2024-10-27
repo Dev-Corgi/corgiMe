@@ -23,7 +23,7 @@ export default function LoadingScreen({ isLoaded }) {
         dispatch(setTrue());
       }}>
       {(!isAnimationComplete || !isLoaded) && (
-        <motion.div className="fixed z-20 flex flex-col items-center justify-between w-screen h-screen">
+        <motion.div className="fixed z-20 flex flex-col items-center justify-between w-screen h-full">
           <motion.div
             className="absolute w-full h-full origin-top bg-point"
             exit={{
