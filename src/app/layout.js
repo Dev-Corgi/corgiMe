@@ -11,11 +11,35 @@ export const metadata = {
 };
 
 const images = [
-  '../../public/Assets/Images/Image/Cursor_1_1.jpg',
-  '../../public/Assets/Images/Image/Cursor_1_2.jpg',
-  '../../public/Assets/Images/Image/Cursor_1_3.jpg',
-  '../../public/Assets/Images/Image/Cursor_1_4.jpg',
-  '../../public/Assets/Images/Image/Cursor_1_5.jpg'
+  '../../public/Assets/Images/Image/booksight_1.png',
+  '../../public/Assets/Images/Image/booksight_2.png',
+  '../../public/Assets/Images/Image/booksight_3.png',
+  '../../public/Assets/Images/Image/booksight_4.png',
+  '../../public/Assets/Images/Image/booksight_thumb.png',
+
+  '../../public/Assets/Images/Image/damatcon_1.png',
+  '../../public/Assets/Images/Image/damatcon_2.png',
+  '../../public/Assets/Images/Image/damatcon_3.png',
+  '../../public/Assets/Images/Image/damatcon_4.png',
+  '../../public/Assets/Images/Image/damatcon_thumb.png',
+
+  '../../public/Assets/Images/Image/messenger_1.png',
+  '../../public/Assets/Images/Image/messenger_2.png',
+  '../../public/Assets/Images/Image/messenger_3.png',
+  '../../public/Assets/Images/Image/messenger_4.png',
+  '../../public/Assets/Images/Image/messenger_thumb.png',
+
+  '../../public/Assets/Images/Image/ecotrip_1.png',
+  '../../public/Assets/Images/Image/ecotrip_thumb.png',
+
+  '../../public/Assets/Images/Image/blit_1.png',
+  '../../public/Assets/Images/Image/blit_thumb.png',
+
+  '../../public/Assets/Images/Image/Slider_1.jpg',
+  '../../public/Assets/Images/Image/Slider_2.jpg',
+  '../../public/Assets/Images/Image/Slider_3.jpg',
+
+  '../../public/Assets/Images/Image/interviewPicture.jpg',
   // 추가 이미지 경로
 ];
 
@@ -29,7 +53,7 @@ export default function RootLayout({ children }) {
       </Head>
       <body className="relative overflow-x-clip">
         <SmoothScrollWrapper>
-          <Navigation className="fixed z-10 w-full px-4 mt-14 md:px-8 lg:px-12 xl:px-16"></Navigation>
+          {/* <Navigation className="fixed z-10 w-full px-4 mt-14 md:px-8 lg:px-12 xl:px-16"></Navigation> */}
           {children}
         </SmoothScrollWrapper>
         <div

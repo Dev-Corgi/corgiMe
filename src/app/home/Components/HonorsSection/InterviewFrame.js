@@ -1,6 +1,6 @@
-import InterviewPicture from "@Image/InterviewPicture.png";
 import Image from "next/image";
 import SubLabels from "@/app/Components/SubLabels";
+import interviewPicture from "@Image/interviewPicture.jpg"
 export default function InterviewFrame() {
   return (
     <div className="flex flex-col gap-5 mt-8 md:mt-48">
@@ -9,7 +9,7 @@ export default function InterviewFrame() {
       서비스에 가치를 더합니다
     </p>
     <Image
-      src={InterviewPicture}
+      src={interviewPicture}
       alt="Interview Picture"
       sizes="(max-width: 428px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 40vw, (max-width: 1440px) 33vw, 25vw"
       className={"w-full aspect-[3/2] object-cover rounded-2xl"}

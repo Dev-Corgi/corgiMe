@@ -1,8 +1,8 @@
 "use client";
 import { motion, useScroll, useTransform } from "framer-motion";
-import Image1 from "@Image/Slider_1.png";
-import Image2 from "@Image/Slider_2.png";
-import Image3 from "@Image/Slider_3.png";
+import Image1 from "@Image/Slider_1.jpg";
+import Image2 from "@Image/Slider_2.jpg";
+import Image3 from "@Image/Slider_3.jpg";
 import Image from "next/image";
 
 export default function PhotoSlider({ className }) {

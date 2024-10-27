@@ -17,7 +17,7 @@ export default function Home() {
 
   return (
     <Provider store={store}>
-      <LoadingScreen isLoaded={isLoaded}></LoadingScreen>
+      {/* <LoadingScreen isLoaded={isLoaded}></LoadingScreen> */}
     <HomePage></HomePage>
     </Provider>
   );
