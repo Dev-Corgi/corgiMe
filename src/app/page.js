@@ -15,6 +15,11 @@ export default function Home() {
   }
   }, [])
 
+  useEffect(() => {
+    // 페이지가 로드될 때마다 스크롤을 맨 위로 설정
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <Provider store={store}>
       <LoadingScreen isLoaded={isLoaded}></LoadingScreen>

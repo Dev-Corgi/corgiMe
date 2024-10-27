@@ -1,6 +1,5 @@
 "use client";
 import { motion } from "framer-motion";
-import BehanceIcon from "@SVG/IconBehance.svg";
 import { easeType } from "@root/animationConfig";
 export default function ContactFrame({
   className,
@@ -39,7 +38,7 @@ export default function ContactFrame({
             </p>
           </div>
           <div className="flex items-center justify-center text-white bg-white rounded-full size-12 lg:size-14 xl:size-16">
-            <BehanceIcon className="text-black size-5 xl:size-6"></BehanceIcon>
+            {logo}
           </div>
         </motion.div>
         </div>

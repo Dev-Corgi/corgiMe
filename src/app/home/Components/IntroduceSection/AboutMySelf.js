@@ -1,10 +1,19 @@
 import TopWhileVIewWrapper from "@/app/UtilComponents/TopWhileViewWrapper";
 import ContactIcon from "@SVG/IconContact.svg";
 import SubLabels from "@/app/Components/SubLabels";
+import { useLenis } from "@root/context/lenisContext";
 export default function AboutMySelf() {
+  const lenis = useLenis();
+
+  const handleClick=()=>{
+      if (lenis) {
+      lenis.scrollTo(document.documentElement.scrollHeight, {
+      });
+    }
+  }
   return (
     <div className="flex flex-col text-3xl leading-none uppercase md:w-80 lg:w-96 xl:w-120 md:order-first font-primary text-primary">
-    <SubLabels text={"<b>CORGI</b>를 만나보세요"}></SubLabels>
+    <SubLabels text={"<b>CORGI </b>를 만나보세요"}></SubLabels>
     <div className="mt-5">
     <TopWhileVIewWrapper>
         <p>안녕하세요,</p>
@@ -29,11 +38,11 @@ export default function AboutMySelf() {
       </TopWhileVIewWrapper>
       </div>
 
-    <div className="flex flex-row items-center w-full mt-10">
-      <div className="flex items-center justify-center rounded-full ml-14 size-12 lg:size-14 xl:size-16 bg-primary">
+    <div className="flex flex-row items-center w-full mt-10" onClick={handleClick}>
+      <div className="flex items-center justify-center rounded-full pointer-events-none ml-14 size-12 lg:size-14 xl:size-16 bg-primary">
         <ContactIcon className="text-white size-4 lg:size-5 xl:size-6"></ContactIcon>
       </div>
-      <p className="ml-4 text-xs leading-tight uppercase font-primary text-primary">
+      <p className="ml-4 text-xs leading-tight uppercase pointer-events-none font-primary text-primary">
         Contact
       </p>
     </div>

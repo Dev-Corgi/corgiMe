@@ -48,7 +48,7 @@ export default function Title({ className }) {
           text={
             "2024 DEV CORGI’s\nFRONTEND PORTPOLIO"
           }></SubLabels>
-        <SubLabels text={"MADE WITH NEXT.JS\nPUBLISHED BY AWS"}></SubLabels>
+        <SubLabels text={"MADE WITH NEXT.JS\nPUBLISHED BY VERCEL"}></SubLabels>
       </div>
     </div>
   );

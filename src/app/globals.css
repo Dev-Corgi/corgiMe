@@ -101,3 +101,11 @@ body {
   font-family: 'Pretendard_SemiBold';
   src: url('/Fonts/Pretendard-SemiBold.ttf') ;
 }
+@font-face {
+  font-family: 'Gilroy-Medium';
+  src: url('/Fonts/Gilroy-Medium.ttf') ;
+}
+@font-face {
+  font-family: 'MAZIUSREVIEW-Extraitalic';
+  src: url('/Fonts/MAZIUSREVIEW20.09-Extraitalic.ttf') ;
+}

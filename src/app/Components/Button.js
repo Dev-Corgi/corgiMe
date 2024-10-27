@@ -2,12 +2,13 @@
 import { motion } from "framer-motion";
 import { easeType } from "@root/animationConfig";
 
-export default function Button({ className, buttonText, highlight }) {
+export default function Button({ className, buttonText, highlight,handleClick= null }) {
   const parts = buttonText.split(highlight); // 강조할 부분을 기준으로 분할
   return (
     <motion.button
       className={`${className} flex border border-secondary rounded-full text-primary overflow-hidden`}
       whileHover="hover"
+      onClick={handleClick}
     >
       <div className="relative w-full h-full">
         <motion.div

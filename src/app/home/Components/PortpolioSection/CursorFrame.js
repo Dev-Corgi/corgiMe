@@ -66,12 +66,12 @@ export default function CursorFrame({className = null, images,active}) {
         <div className="border-2 border-white rounded-full size-10 lg:size-11 xl:size-12"></div>
         <div className="flex items-center justify-center h-10 px-8 bg-white rounded-full lg:h-11 xl:h-12 lg:px-9 xl:px-10">
           <p className="text-sm leading-tight text-black font-primary">
-            Highlights
+            Highl<span className="font-accent">i</span>ghts
           </p>
         </div>
       </div>
 
-      <div className="flex flex-col h-40 lg:h-44 xl:h-48 mt-3 bg-[#FFFFFF] rounded-sm w-60 lg:w-64 xl:w-72 bg-opacity-20">
+      <div className="flex flex-col mt-3 bg-[#FFFFFF] rounded-sm w-60 lg:w-64 xl:w-72 bg-opacity-20">
         <div className="flex flex-row gap-x-0.5 px-1 py-0.5">
           <div className="bg-[#FFFFFF] size-1 bg-opacity-40 rounded-full"></div>
           <div className="bg-[#FFFFFF] size-1 bg-opacity-40 rounded-full"></div>
@@ -84,7 +84,7 @@ export default function CursorFrame({className = null, images,active}) {
               src={image}
               alt="cursor Image"
               sizes="(max-width: 428px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 40vw, (max-width: 1440px) 33vw, 25vw"
-              className={`left-0 top-0 absolute w-full h-full object-cover rounded-sm ${active && currentIndex==index ? "visible" : "invisible"}`}
+              className={`left-0 top-0 absolute w-full h-min object-cover rounded-sm ${active && currentIndex==index ? "visible" : "invisible"}`}
             key = {index}
             />
             )

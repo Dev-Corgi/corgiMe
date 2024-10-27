@@ -11,7 +11,7 @@ export default function   AwardReferance({
     <div className={`${className}  flex flex-col font-primary`}>
       <div className="flex flex-row items-center justify-between py-6">
         <div className="flex flex-row items-center gap-x-6">
-          <div className="flex flex-col w-20 lg:w-24 xl:w-28">
+          <div className="flex flex-col w-14 md:w-16 lg:w-24 xl:w-28">
             <p className="leading-tight uppercase text-2xs text-secondary">
               {featuring}
             </p>
@@ -20,7 +20,7 @@ export default function   AwardReferance({
             </p>
           </div>
           <TopWhileVIewWrapper>
-          <p className="flex-grow w-32 text-2xl leading-tight md:w-56 lg:w-60 xl:w-64 text-primary">
+          <p className="flex-grow w-32 text-2xl leading-tight md:w-60 lg:w-72 xl:w-96 text-primary">
             {awardName}
           </p>
           </TopWhileVIewWrapper>

@@ -5,6 +5,32 @@ import Heading from "../Components/FooterSection/Heading";
 
 export default function Footer() {
 
+  const handleClick1 = () => {
+    // 메일 주소와 기본 제목 및 내용 설정
+    const email = "bora5242@gmail.com";
+    const subject = "프로젝트 협력에 관하여 문의드립니다.";
+    const body = "여기에 내용을 작성해주세요.";
+
+    // mailto 링크 생성
+    const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+    // mailto 링크로 이동
+    window.location.href = mailtoLink;
+  };
+
+  const handleClick2 = () => {
+    // 메일 주소와 기본 제목 및 내용 설정
+    const email = "bora5242@gmail.com";
+    const subject = "외주 요청에 관하여 문의드립니다";
+    const body = "여기에 내용을 작성해주세요.";
+
+    // mailto 링크 생성
+    const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+    // mailto 링크로 이동
+    window.location.href = mailtoLink;
+  };
+
   return (
     <div className="flex flex-col w-full px-4 pb-24 bg-footer md:px-8 lg:px-12 xl:px-16">
       <Heading></Heading>
@@ -13,10 +39,12 @@ export default function Footer() {
         <Button
           className="w-full h-20 text-white border-white lg:h-24 xl:h-28"
           buttonText={"프로젝트 협력 문의"}
+          handleClick={handleClick1}
         ></Button>
         <Button
           className="w-full h-20 text-white border-white lg:h-24 xl:h-28"
           buttonText={"외주 상담 문의"}
+          handleClick={handleClick2}
         ></Button>
       </div>
 

@@ -87,8 +87,8 @@ module.exports = {
         504: "126rem", // 2016px
       },
       fontFamily: {
-        primary: ["Pretendard_Medium", "Arial", "sans-serif"],
-        accent: ["Pretendard_SemiBold", "Georgia", "serif"],
+        primary: ["Gilroy-Medium","Pretendard_Medium", "Arial", "sans-serif"],
+        accent: ["MAZIUSREVIEW-Extraitalic","Pretendard_SemiBold", "Georgia", "serif"],
       },
       colors: {
         background: "var(--background)",
